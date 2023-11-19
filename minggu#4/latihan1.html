@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    
+</head>
+<body>
+
+    <!-- 
+        input : 
+        * text
+        * password
+        * checkbox
+        * radio
+
+        select 
+     -->
+    <h1>Latihan Minggu ke 4 - Form</h1>
+    <form action="Nama Lengkap.php?action=verification">
+        <label>Nama Lengkap : </label><input type="text" /><br />
+        <label>Jenis Kelamin : </label>
+        <input type="radio" name="jenis_kelamin" value="pria" />Pria 
+        <input type="radio" name="jenis_kelamin" value="wanita" />Wanita <br />
+        <label>Hobi : </label>
+        <input type="checkbox" name="bumbu[]" value="makan"> Makan<br />
+        <input type="checkbox" name="hobi[]" value="travel"> Travel<br />
+
+        <label>Pendidikan Terakhir</label>
+        <select name="pendidikan_terakhir">
+            <option value="SD">SD</option>
+            <option value="SMP">SMP</option>
+            <option value="SMA">SMA</option>
+        </select><br />
+
+        <label>Alamat: </label>
+        <textarea rows="10">
+        </textarea>
+        <br />
+    </form>
+</body>
+</html>
