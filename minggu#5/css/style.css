@@ -1,0 +1,31 @@
+/* h1{
+    border: 1px solid red;
+} */
+
+/* div.container.berita{
+    border:1px solid red;
+}
+
+div.container h2.judul.judul-pertama{
+    color: red;
+    font-weight: bold;
+}
+
+div.container p a{
+    color: red;
+    text-decoration: none;
+} */
+
+div.all-article div.container:first-child{
+    border:1px solid red;
+} 
+
+ul li:first-child{
+    border:1px solid red;
+}
+
+h1#judul{
+    border:1px solid red;
+    width:50%;
+    height:300px;
+}
