@@ -25,7 +25,34 @@ ul li:first-child{
 }
 
 h1#judul{
-    border:1px solid red;
+    border:1px solid red !important;
     width:50%;
     height:300px;
+}
+
+h1#judul{
+    border:2px dashed green;
+    width:50%;
+    height:300px;
+}
+
+div.all-article div.container.berita, 
+div.all-article div.container.humor{
+    border:3px solid rgb(131,83,238);
+}
+
+.humor, .berita{
+    border:3px solid red;
+}
+
+/* p > a{
+    border:1px solid red;
+} */
+
+* a{
+    border:1px solid blue;
+}
+
+*{
+    color: green;
 }
