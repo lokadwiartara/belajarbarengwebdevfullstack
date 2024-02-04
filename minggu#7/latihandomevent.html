@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      #modal {
+        background-color: rgba(3, 3, 3, 0.4);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: none;
+        top: 0;
+        z-index: 99;
+        overflow-y: hidden !important;
+      }
+
+      .modalshow {
+        display: block !important;
+      }
+
+      div.content {
+        width: 50%;
+        height: 350px;
+        background: white;
+        margin: 10% auto;
+        border-radius: 10px;
+      }
+
+      a.close {
+        float:right;    
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #000;
+        font-size: 1.2em;
+        text-align: right;
+        margin: 10px 10px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Latihan Javascript Dom Event</h2>
+
+    <button id="btnTampilModal" onclick="tampilkanModal()">
+      Tampilkan Modal Box
+    </button>
+
+    <div id="modal" onclick="tutupModal()">
+      <div class="content">
+        <div class="modal-header">
+          <a href="#" class="close" onclick="tutupModal()">X</a>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+
+    <script>
+      function tampilkanModal() {
+        document.getElementById("modal").classList.add("modalshow");
+      }
+
+      function tutupModal() {
+        document.getElementById("modal").classList.remove("modalshow");
+      }
+    </script>
+  </body>
+</html>
